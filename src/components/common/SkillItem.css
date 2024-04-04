@@ -1,0 +1,38 @@
+.skillBar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.skillBarImg{
+    object-fit: contain;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+.skillBarText > p{
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 720px){
+    .skillBarText > p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .skillBarText > p{
+        font-size: 4vw;
+    }
+    .skillBarImg{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .skillBarText> h2{
+        font-size: 5vw;
+    }
+}

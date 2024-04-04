@@ -1,0 +1,95 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: rgb(30, 30, 30);
+    z-index: 3;
+}
+
+.logo{
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+}
+
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.desktopMenuListItem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.desktopMenuButton{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.active{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.mobMenuBtn{
+    object-fit: cover;
+    cursor: pointer;
+    width: 1.8rem;
+    height: 1.5rem;
+    display: none;
+}
+
+.mobileMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+
+.mobileMenuListItem{
+    cursor: pointer;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width: 720px) {
+    .mobMenuBtn{
+        display: flex;
+    }
+
+    .desktopMenu, .desktopMenuButton{
+        display: none;
+    }
+}
